@@ -1,0 +1,26 @@
+{
+  "name": "01-basic-memory",
+  "version": "1.0.0",
+  "description": "Basic memory setup with Mastra agents",
+  "type": "module",
+  "scripts": {
+    "seed": "DB_BASE='./' tsx src/seed.ts",
+    "dev": "mastra dev"
+  },
+  "dependencies": {
+    "@ai-sdk/openai": "^1.3.23",
+    "@mastra/core": "^0.11.1",
+    "@mastra/libsql": "^0.11.2",
+    "@mastra/memory": "^0.11.5",
+    "zod": "^3"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.5",
+    "mastra": "^0.10.15",
+    "tsx": "^4.19.2",
+    "typescript": "^5.7.3"
+  },
+  "engines": {
+    "node": ">=20.0.0"
+  }
+}

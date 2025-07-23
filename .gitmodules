@@ -1,0 +1,3 @@
+[submodule "examples/03-longmemeval-exploration/src/data"]
+	path = examples/03-longmemeval-exploration/src/data
+	url = git@hf.co:datasets/tylbar/mastra-longmemeval-workshop-data

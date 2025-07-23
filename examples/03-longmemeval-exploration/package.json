@@ -1,0 +1,29 @@
+{
+  "name": "03-longmemeval-exploration",
+  "version": "1.0.0",
+  "description": "Interactive exploration of 500 LongMemEval benchmark questions",
+  "type": "module",
+  "scripts": {
+    "dev": "mastra dev",
+    "mastra": "mastra",
+    "test:question": "tsx src/scripts/test-question.ts",
+    "list:questions": "tsx src/scripts/list-questions.ts"
+  },
+  "dependencies": {
+    "@ai-sdk/openai": "^1.3.23",
+    "@mastra/core": "^0.11.1",
+    "@mastra/memory": "^0.11.5",
+    "@node-rs/xxhash": "^1.7.6",
+    "async-mutex": "^0.5.0",
+    "imvectordb": "^0.0.6"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.5",
+    "mastra": "^0.10.15",
+    "tsx": "^4.19.2",
+    "typescript": "^5.7.3"
+  },
+  "engines": {
+    "node": ">=20.0.0"
+  }
+}
