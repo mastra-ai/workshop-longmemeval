@@ -2,6 +2,32 @@
 
 Workshop materials for building AI agents with advanced memory capabilities using [Mastra](https://mastra.ai).
 
+## LongMemEval setup
+
+For the longmemeval example there's a huggingface git submodule in ./examples/03-longmemeval-exploration/src/data/
+To run this example you must clone the submodule.
+
+You can do that when you clone this repo by running:
+
+```bash
+git clone --recurse-submodules https://github.com/mastra-ai/workshop-longmemeval.git
+```
+
+or
+
+```bash
+git clone --recurse-submodules git@github.com:mastra-ai/workshop-longmemeval.git
+```
+
+_Note_: the longmemeval subrepo is ~9GB! If you don't want all that data, a regular git clone will skip it.
+
+If you clone the repo and want the longmemeval data later:
+
+```bash
+cd examples/03-longmemeval-exploration/src/data/
+git submodule update --init --recursive
+```
+
 ## 📅 Workshop Info
 
 **Date**: July 24, 2025  
@@ -12,36 +38,34 @@ Workshop materials for building AI agents with advanced memory capabilities usin
 ## 🎯 What You'll Learn
 
 - **Memory Fundamentals**: Understanding Working Memory vs Semantic Recall
-- **Benchmark Performance**: How Mastra achieved 80% accuracy on LongMemEval
+- **Benchmark Performance**: [How Mastra achieved 80% accuracy on LongMemEval](https://mastra.ai/blog/use-rag-for-agent-memory)
 - **Practical Implementation**: Building agents that remember users across conversations
 
 ## 🛠️ Prerequisites
 
 - Node.js v20+ installed
 - OpenAI API key
-- Basic JavaScript/TypeScript knowledge
 
 ## 🚀 Quick Start
 
-1. Clone this repository:
-
-```bash
-git clone <repo-url>
-cd workshop-repo
-```
-
-2. Choose an example to explore:
+1. Choose an example to explore:
 
 ```bash
 cd examples/01-basic-memory
 pnpm install
 ```
 
-3. Add your OpenAI API key to `.env`:
+2. Add your OpenAI API key to `.env`:
 
 ```bash
 # Uncomment and add your key
 OPENAI_API_KEY=your_key_here
+```
+
+3. Seed some data:
+
+```bash
+pnpm seed
 ```
 
 4. Run the example:
@@ -106,11 +130,10 @@ Build a practical restaurant recommendation agent:
 
 ## 💬 Get Help
 
-- **Discord**: [Join our community](https://discord.gg/mastra)
+- **Discord**: [Join our community](https://discord.gg/BTYqqHKUrf)
 - **GitHub Issues**: [Report bugs or request features](https://github.com/mastra-ai/mastra/issues)
 - **Twitter**: [@mastra_ai](https://twitter.com/mastra_ai)
 
 ---
 
 Built with ❤️ by the Mastra team
-
