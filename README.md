@@ -2,6 +2,24 @@
 
 Workshop materials for building AI agents with advanced memory capabilities using [Mastra](https://mastra.ai).
 
+## 📅 Workshop Info
+
+**Date**: July 24, 2025  
+**Time**: 11:00 AM - 12:00 PM Central Time  
+**Duration**: 1 hour  
+**Event**: [Lu.ma](https://lu.ma/n6w50v8s)
+
+## 🎯 What You'll Learn
+
+- **Memory Fundamentals**: Understanding Working Memory vs Semantic Recall
+- **Benchmark Performance**: [How Mastra achieved 80% accuracy on LongMemEval](https://mastra.ai/blog/use-rag-for-agent-memory)
+- **Practical Implementation**: Building agents that remember users across conversations
+
+## 🛠️ Prerequisites
+
+- Node.js v20+ installed
+- OpenAI API key
+
 ## LongMemEval setup
 
 For the longmemeval example there's a huggingface git submodule in ./examples/03-longmemeval-exploration/src/data/
@@ -27,24 +45,6 @@ If you clone the repo and want the longmemeval data later:
 cd examples/03-longmemeval-exploration/src/data/
 git submodule update --init --recursive
 ```
-
-## 📅 Workshop Info
-
-**Date**: July 24, 2025  
-**Time**: 11:00 AM - 12:00 PM Central Time  
-**Duration**: 1 hour  
-**Event**: [Lu.ma](https://lu.ma/n6w50v8s)
-
-## 🎯 What You'll Learn
-
-- **Memory Fundamentals**: Understanding Working Memory vs Semantic Recall
-- **Benchmark Performance**: [How Mastra achieved 80% accuracy on LongMemEval](https://mastra.ai/blog/use-rag-for-agent-memory)
-- **Practical Implementation**: Building agents that remember users across conversations
-
-## 🛠️ Prerequisites
-
-- Node.js v20+ installed
-- OpenAI API key
 
 ## 🚀 Quick Start
 
